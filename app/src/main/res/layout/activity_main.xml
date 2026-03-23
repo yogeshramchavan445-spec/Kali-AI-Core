@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kali_dark"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🤖 Kali AI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/kali_green"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Status Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#112211"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNetworkStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🌐 ऑफलाइन"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvSyncStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📊 DB: 0"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Chat Output -->
+    <ScrollView        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#111111"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kali: नमस्ते! मैं आपकी क्या मदद कर सकता हूँ?\n\n💡 टिप: 'Kali' बोलकर मुझे एक्टिवेट करें"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+    </ScrollView>
+
+    <!-- Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="यहाँ लिखें..."
+            android:textColor="@color/white"
+            android:textColorHint="#888888"
+            android:background="#222222"
+            android:padding="12dp"
+            android:inputType="text"
+            android:maxLines="3"/>
+
+        <ImageButton
+            android:id="@+id/btnVoice"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:background="@color/purple_500"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Voice Input"/>
+    </LinearLayout>
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"        android:layout_height="wrap_content"
+        android:text="📤 भेजें"
+        android:backgroundTint="@color/kali_accent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Permissions Button -->
+    <Button
+        android:id="@+id/btnPermissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Permissions चेक करें"
+        android:backgroundTint="#444444"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Force Sync Button -->
+    <Button
+        android:id="@+id/btnSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔄 GitHub Sync (Manual)"
+        android:backgroundTint="#2266AA"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
