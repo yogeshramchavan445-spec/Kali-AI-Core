@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kali AI</string>
+    <string name="accessibility_description">Kali AI को स्क्रीन पढ़ने और कंट्रोल करने की अनुमति दें। यह कॉल उठाने, ऐप खोलने और अन्य कार्यों के लिए आवश्यक है।</string>
+    <string name="permission_required">Permissions आवश्यक हैं</string>
+    <string name="accessibility_required">Accessibility Service चालू करें</string>
+    <string name="welcome_message">नमस्ते! मैं Kali हूँ। आपकी क्या मदद कर सकता हूँ?</string>
+    <string name="offline_mode">ऑफलाइन मोड</string>
+    <string name="online_mode">ऑनलाइन मोड</string>
+    <string name="syncing">GitHub पर सिंक हो रहा है...</string>
+    <string name="sync_complete">सिंक पूरा हुआ</string>
+</resources>
