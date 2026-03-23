@@ -1,0 +1,32 @@
+# ===========================================
+# Kali AI - API Keys Configuration
+# ===========================================
+# इस फाइल को local.properties नाम से सेव करें
+# यह फाइल Git में अपलोड नहीं होगी (सुरक्षित)
+# ===========================================
+
+# DeepSeek API Key (Primary AI)
+# Get from: https://platform.deepseek.com/
+DEEPSEEK_API_KEY=sk-your-deepseek-api-key-here
+
+# Google Gemini API Key (Backup AI)
+# Get from: https://makersuite.google.com/app/apikey
+GEMINI_API_KEY=your-gemini-api-key-here
+
+# GitHub Personal Access Token
+# Get from: GitHub Settings → Developer Settings → Personal Access Tokens
+# Scopes needed: repo (full control of private repositories)
+GITHUB_TOKEN=ghp_your-github-personal-access-token
+
+# GitHub Username
+GITHUB_USERNAME=your-github-username
+
+# GitHub Repository Name
+GITHUB_REPO=Kali-AI-Core
+
+# ===========================================
+# Notes:
+# 1. Never commit this file to Git
+# 2. Keep your tokens secure
+# 3. Regenerate tokens if leaked
+# ===========================================
